@@ -3,30 +3,36 @@ from bank import Account
 
 def test_initial_balance():
     # TODO
-	_init_(self, "DS", balance=0)
-    self.get_balance()
+    self = Account("DS")
+    self.balance = 100
+    self.get_balance() = 100
 
 def test_deposit():
     # TODO
-	_init_(self, "DS", balance=0)
-    self.deposit(100.0)
+    self = Account("DS")
+    self.balance = 0
+    self.deposit(100.0) = 100.0
 
 def test_withdraw():
     # TODO
-    _init_(self, "DS", balance=0)
-	withdraw(10.0)
+	self = Account("DS")
+    self.balance = 100
+    withdraw(10.0) = 90.0
 
 def test_deposit_negative_amount():
     # TODO
-    _init_(self, "DS", balance=0)
-	self.deposit(-abs(10))
+	self = Account("DS")
+    self.balance = 10.0
+    self.deposit(-abs(10))
 
 def test_withdraw_more_than_balance():
     # TODO
-    _init_(self, "DS", balance=0)
-	self.withdraw(self.get_balance(self) + 100.0)
+	self = Account("DS")
+    self.balance = 10.0
+    self.withdraw(self.get_balance(self) + 100.0)
 
 def test_withdraw_negative_amount():
     # TODO
-    _init_(self, "DS", balance=0)
-	self.withdraw(-abs(10))
+	self = Account("DS")
+    self.balance = 10.0
+    self.withdraw(-abs(10))
